@@ -7,35 +7,6 @@ Small internal tool: employees request leave, managers approve or reject, everyo
 - Tests: xUnit for backend service rules; Vitest, React Testing Library, and jsdom for frontend component tests.
 
 
-nordia-leave/
-├─ backend/
-│  ├─ NordiaLeave.sln
-│  ├─ LeaveApi/
-│  │  ├─ Endpoints/      ← HTTP route registration
-│  │  ├─ Services/       ← business rules and use cases
-│  │  ├─ Models/
-│  │  │  ├─ Domain/      ← core business entities and exceptions
-│  │  │  ├─ Requests/    ← API request bodies
-│  │  │  └─ Responses/   ← API response models
-│  │  ├─ Data/           ← Oracle mapping and schema upgrade script
-│  │  └─ Program.cs      ← app configuration and middleware
-│  └─ LeaveApi.Tests/    ← xUnit tests
-└─ frontend/             ← React app
-   └─ src/
-      ├─ app/            ← app-level state and data loading
-      ├─ features/
-      │  ├─ employee/    ← balance, request form, and leave history
-      │  └─ manager/     ← pending request review
-      ├─ services/       ← backend API client
-      ├─ shared/         ← reusable helpers
-      ├─ main.jsx        ← React entry point
-      └─ styles/         ← global styles
-   └─ tests/
-      └─ features/
-         ├─ employee/    ← leave form tests
-         └─ manager/     ← pending request tests   
-
-
 
  1. Prerequisites
 
