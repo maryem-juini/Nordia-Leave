@@ -1,0 +1,6 @@
+bin/
+obj/
+.vs/
+*.user
+LeaveApi/appsettings.Development.json
+LeaveApi/appsettings.*.local.json
